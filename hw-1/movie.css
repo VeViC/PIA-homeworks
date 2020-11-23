@@ -4,6 +4,16 @@ body {
 }
 
 h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.div-main {
+    width: 55vw;
+    margin: auto;
     text-align: center;
 }
 
