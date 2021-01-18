@@ -1,3 +1,4 @@
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +9,10 @@
     <div class = "header">
         <h2>Prijava</h2>
     </div>
-    <form method = "post" action = "login.php">
+    <form method = "POST" action = "login.php">
         <div class = "input-group">
             <label>E-mail ili korisničko ime</label>
-            <input type = "text" name = "user-email">
+            <input type = "text" value= "<?php echo $user_email; ?>" name = "user-email">
         </div>
         <div class = "input-group">
             <label>Šifra</label>

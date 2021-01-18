@@ -1,3 +1,4 @@
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,29 +9,30 @@
     <div class = "header">
         <h2>Registracija</h2>
     </div>
-    <form method = "post" action = "registracija.php">
+    <form method = "POST" action = "registracija.php">
+        <?php include('errors.php'); ?>
         <div class = "input-group">
             <label>Ime</label>
-            <input type = "text" name = "ime">
+            <input type = "text" value= "<?php echo $ime; ?>" name = "ime">
         </div>
         <div class = "input-group">
             <label>Prezime</label>
-            <input type = "text" name = "prezime">
+            <input type = "text" value= "<?php echo $prezime; ?>" name = "prezime">
         </div>
         <div class = "input-group">
             <label>E-mail</label>
-            <input type = "text" name = "email">
+            <input type = "email" value= "<?php echo $email; ?>" name = "email">
         </div>
         <div class = "input-group">
             <label>Korisničko ime</label>
-            <input type = "text" name = "username">
+            <input type = "username" value= "<?php echo $username; ?>" name = "username">
         </div>
         <div class = "input-group">
             <label>Šifra</label>
-            <input type = "text" name = "password">
+            <input type = "password" name = "sifra">
         </div>
         <div class = "input-group">
-            <button type = "submit" name = "registracija" class = "btn"> Registruj se </button>
+            <button type = "submit" name = "registracija-btn" class = "btn"> Registruj se </button>
         </div>
         <p>
             Već ste prijavljeni? <a href = "login.php"> Prijava </a>
