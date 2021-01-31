@@ -95,3 +95,52 @@ a:hover {
     color: black;
     background-color: yellow
 }
+
+.add-form {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #a698d8;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input.group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 0px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.header {
+    width: 30%;
+    margin: 50px auto 0px;
+    color:rgb(0, 0, 0);
+    background: #dd8d15;
+    text-align: center;
+    border: 1px solid #090d13;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+}
+
+.naslov {
+    color:blue;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+}
