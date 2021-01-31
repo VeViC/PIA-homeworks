@@ -10,16 +10,17 @@
         <h2>Prijava</h2>
     </div>
     <form method = "POST" action = "login.php">
+        <?php include('errors.php'); ?>
         <div class = "input-group">
             <label>E-mail ili korisničko ime</label>
             <input type = "text" value= "<?php echo $user_email; ?>" name = "user-email">
         </div>
         <div class = "input-group">
             <label>Šifra</label>
-            <input type = "text" name = "password">
+            <input type = "password" name = "sifra">
         </div>
         <div class = "input-group">
-            <button type = "submit" name = "login" class = "btn"> Prijavi se </button>
+            <button type = "submit" name = "login-btn" class = "btn"> Prijavi se </button>
         </div>
         <p>
             Niste prijavljeni? <a href = "registracija.php"> Registracija </a>
